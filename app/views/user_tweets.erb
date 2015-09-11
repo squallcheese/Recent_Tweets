@@ -1,0 +1,8 @@
+<div class="container">
+	<h2>Tweets for <%= @user.username %></h2>
+<ol>
+	<p><% @recent_tweets.each do |tweet| %></p>
+	<li><p> <%= tweet.tweet_text %></p></li>
+	<% end %>
+</ol>
+</div>
